@@ -1,0 +1,4 @@
+api:
+  users: "/api/users?page=2"
+  single: "/api/users/"
+  register: "/api/register"
