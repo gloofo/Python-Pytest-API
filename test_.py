@@ -2,12 +2,6 @@ from src.modules import *
 
 endpoint = "https://reqres.in"
 
-#Load endpoints yaml data
-def data():
-    with open("resources/endpoints.yaml") as file:
-        getdata = yaml.load(file, Loader=yaml.FullLoader)
-    return getdata
-
 #get user details
 def test_Users():
     userList = requests.get(endpoint + f"{data()['api']['users']}")
